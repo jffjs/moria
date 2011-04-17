@@ -219,7 +219,7 @@ elseif &background == "light"
     hi WarningMsg guibg=bg guifg=#ee2c2c gui=bold
     hi WildMenu guibg=#ffff00 guifg=fg gui=bold
 
-    hi Comment guibg=bg guifg=#786000 gui=none
+    hi Comment guibg=bg guifg=#666666 gui=none
     hi Constant guibg=bg guifg=#077807 gui=none
     hi Error guibg=bg guifg=#ee2c2c gui=none
     hi Identifier guibg=bg guifg=#007080 gui=none
@@ -232,6 +232,13 @@ elseif &background == "light"
     hi Todo guibg=#ffff00 guifg=fg gui=none
     hi Type guibg=bg guifg=#912f11 gui=bold
     hi Underlined ctermbg=15 ctermfg=0 guibg=bg guifg=#0000cd gui=underline
+
+" Special for ruby
+    hi rubyInterpolationDelimiter guifg=#00B3B3 guibg=NONE gui=NONE ctermfg=blue ctermbg=NONE cterm=NONE
+    hi rubyRegexp guifg=#B18A3D guibg=NONE gui=NONE ctermfg=brown ctermbg=NONE      cterm=NONE
+    hi rubyRegexpDelimiter guifg=#FF8000 guibg=NONE gui=NONE ctermfg=brown ctermbg=NONE      cterm=NONE
+    hi rubyControl guifg=#6699CC guibg=NONE gui=NONE ctermfg=blue  ctermbg=NONE      cterm=NONE  "and break, etc
+    hi rubyStringDelimiter guifg=#336633 guibg=NONE gui=NONE ctermfg=lightgreen ctermbg=NONE cterm=NONE
 
     hi htmlBold ctermbg=15 ctermfg=0 guibg=bg guifg=fg gui=bold
     hi htmlBoldItalic ctermbg=15 ctermfg=0 guibg=bg guifg=fg gui=bold,italic
